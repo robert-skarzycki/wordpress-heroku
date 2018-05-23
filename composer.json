@@ -16,12 +16,12 @@
         {
             "type": "package",
             "package": {
-                "name": "wordpress/wordpress-ja",
+                "name": "wordpress/wordpress-pl",
                 "type": "webroot",
-                "version": "4.8.1",
+                "version": "4.9.6",
                 "dist": {
                     "type": "zip",
-                    "url": "https://ja.wordpress.org/wordpress-4.8.1-ja.zip"
+                    "url": "https://pl.wordpress.org/wordpress-4.9.6-pl_PL.zip"
                 },
                 "require": {
                     "fancyguy/webroot-installer": "~1.1"
@@ -34,7 +34,7 @@
         "ext-apcu": "*",
         "ext-gd": "*",
         "ext-mbstring": "*",
-        "wordpress/wordpress-ja": "*",
+        "wordpress/wordpress-pl": "*",
         "wp-cli/wp-cli": "~1.2",
         "wpackagist-plugin/001-prime-strategy-translate-accelerator": "*",
         "wpackagist-plugin/amazon-s3-and-cloudfront": "*",
@@ -47,10 +47,14 @@
     },
     "extra": {
         "webroot-dir": "public",
-        "webroot-package": "wordpress/wordpress-ja",
+        "webroot-package": "wordpress/wordpress-pl",
         "installer-paths": {
-            "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-            "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+            "public/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "public/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
         }
     },
     "scripts": {
