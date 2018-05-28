@@ -2,6 +2,8 @@
 
 WordPress on Heroku
 
+Based on https://github.com/shimoju/wordpress-heroku.git, but with updated Worpdress version and with locale switched to `pl-PL`.
+
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Setup
@@ -14,7 +16,7 @@ WordPress on Heroku
 ### Build Docker image
 
 ```sh
-git clone https://github.com/shimoju/wordpress-heroku.git your-blog-name
+git clone https://github.com/robert-skarzycki/wordpress-heroku.git your-blog-name
 cd your-blog-name
 docker-compose build && docker-compose run --rm app composer install
 ```
@@ -50,8 +52,12 @@ web: vendor/bin/heroku-php-apache2 -C config/apache.conf public
 
 ## License
 
-[GNU GPL v2.0](https://github.com/shimoju/wordpress-heroku/blob/master/LICENSE)
+[GNU GPL v2.0](https://github.com/robert-skarzycki/wordpress-heroku/blob/master/LICENSE)
 
 ## Author
 
+Original author:
 [Hiroshi Shimoju](https://github.com/shimoju)
+
+Additions in this fork made by:
+[Robert Skarżycki](https://github.com/robert-skarzycki)
